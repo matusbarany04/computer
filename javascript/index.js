@@ -20,7 +20,7 @@ power.onclick = function () {
   setTimeout(() => {  window.location = "http://terminal.dismounted.space";},1000);
 
 };
-
+  
 var red = document.getElementById("red");
 red.onclick = function () {
   play_sound("assets/cancel.mp3");
