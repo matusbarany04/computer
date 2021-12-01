@@ -5,121 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #402149;
-        display: grid;
-        place-items: center;
-    }
 
-    main {
-        width: 70%;
-        aspect-ratio: 4/3;
-        background-color: #777;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .monitor {
-        flex: 7;
-        display: flex;
-        flex-direction: column;
-        /* background-color: #ab7e62; */
-    }
-
-    .monitor .upper-part {
-        background-color: #ab7e62;
-        flex: 9;
-        display: flex;
-        margin-left: 10%;
-    }
-    .monitor .upper-part .light {
-        background-color: #ab7e62;
-        flex: 11;
-    }
-    .monitor .upper-part .darker {
-        background-color: #888;
-        flex: 2;
-    }
-    .monitor .upper-part .back {
-        background-color: #1a11a1;
-        flex: 4;
-        height: 95%;
-        margin: auto;
-        /*-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);*/
-        clip-path: polygon(0% 0%, 100% 20%, 100% 80%,0% 100%);
-
-    }
-    .monitor .holder {
-        background-color: #d5bb97;;
-        flex: 1;
-        margin: 0 20%;
-        display: flex;
-        flex-direction: column;
-    }
-    .monitor .holder .up{
-        width: 60%;
-        margin: auto;
-        background-color: red;
-        flex: 1;
-    }
-    .monitor .holder .down{
-        border-radius: 30px 30px 0 0;
-        flex: 1;
-        background-color: blue;
-    }
-    .computer {
-        flex: 2;
-        /* background-color: #d5bb97; */
-        display: flex;
-    }
-
-    .computer .front {
-        background-color: #fbf5e0;
-        flex: 12;
-        display: flex;
-        padding: 2%;
-    }
-
-    .front .front-inside {
-        background-color: #efe0c0;
-        flex: 1;
-    }
-
-    .computer .edge {
-        background-color: #d5bb97;
-        flex: 1;
-    }
-
-    .computer .side {
-        background-color: #ad7d62;
-        flex: 5;
-    }
-</style>
 
 <body>
     <main>
         <div class="monitor">
             <div class="upper-part">
-                <div class="light">
-
-                </div>
                 <div class="darker">
-
+                    <div class="light">
+                        <div class="screen-container">
+                            <div class="screen"></div>
+                            <div class="screen-shadow"></div>
+                        </div>
+                        <div class="buttons">
+                            <div class="one">
+                                <div class="red" id="red" ></div>
+                                <div class="blue" id="blue"></div>
+                                <div class="green" id="green"></div>
+                            </div>
+                            <div class="two">
+                                <div class="sound"></div>
+                            </div>
+                            <div class="three">
+                                <div class="power" id="power"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="back">
-
+                   
                 </div>
+      
             </div>
             <div class="holder">
                 <div class="up">
+                    <div class="lighter">
 
+                    </div>
                 </div>
                 <div class="down">
+                    <div class="lighter">
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,19 +58,130 @@
 
                 </div>
                 <div class="front-inside">
+                    <div class="left">
+                        <div class="square">
 
+                        </div>
+                        <div class="line">
+
+                        </div>
+                
+                    </div>
+
+                    <div class="right">
+                        <div class="square">
+
+                        </div>
+                        <div class="line">
+
+                        </div>
+                
+                    </div>
                 </div>
             </div>
             <div class="edge">
 
             </div>
             <div class="side">
+                <div class="grid">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
 
+                </div>
             </div>
 
-        </div>
-    </main>
 
+        </div>
+
+    </main>
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>

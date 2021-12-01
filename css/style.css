@@ -1,0 +1,295 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #402149;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    width: 70%;
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.monitor {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #ab7e62; */
+}
+
+.monitor .upper-part {
+
+    flex: 9;
+    display: flex;
+    margin-left: 10%;
+}
+
+.monitor .upper-part  .darker .light {
+    background-color: #fdf4e0;
+    width: 100%;
+    margin-right: calc(100% - (100% / 13 * 11));
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.monitor .upper-part  .darker .light .screen-container {
+    flex: 5;
+    width: 80%;
+    height: 70%;
+    margin-top: 10%;
+    position: relative;
+    /* z-index: 3; */
+}
+.monitor .upper-part  .darker .light .screen-container .screen{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    margin-left: 1%;
+    border-radius: 5%;
+    background-color: #482c21;
+}
+
+.screen-shadow{
+    border-radius: 5%;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-left: -1%;
+    background-color: #d5bb97;
+}
+
+.monitor .upper-part  .darker .light .buttons {
+
+    flex: 1;
+    display: flex;
+    width: 80%;
+    height: 40%;
+}
+
+.buttons .one {
+    flex: 1;
+    display: flex;
+}
+
+.one>div {
+    flex: 1;
+    margin: 25% 2%;
+}
+.one>div:hover {
+
+    transform: scale(1.08);
+}
+
+.one>div:active {
+    transform: scale(1);
+}
+
+.one div:nth-child(1) {
+    background-color: #b22e25;
+}
+
+.one div:nth-child(2) {
+    background-color: #3775ab;
+}
+
+.one div:nth-child(3) {
+    background-color: #85862b;
+}
+
+.buttons .two {
+    flex: 3;
+    display: grid;
+    place-items: center;
+}
+
+.buttons .two .sound {
+    background-color: #d5bb97;
+    width: 70%;
+    height: 30%;
+    border-radius: 30px;
+}
+
+.buttons .three {
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+.buttons .three .power {
+    background-color: #d5bb97;
+    width: 30%;
+    height: 30%;
+    /* border-radius: 30px; */
+}
+.buttons .three .power:hover {
+
+    transform: scale(1.08);
+}
+.buttons .three .power:active {
+
+    transform: scale(1);
+}
+.monitor .upper-part  .darker {
+    background-color: #d5bb97;
+    flex: calc(2 + 11);
+    display: flex;
+    border-radius: 5%;
+}
+
+.monitor .upper-part .back {
+    background-color: #ab7e62;
+    border: 10px solid #8e614c;
+    border-style: hidden hidden hidden solid ;
+    height: 85%;
+    margin: auto;
+    display: flex;
+
+    /* border-radius: 30px; */
+    padding-right: calc((-10px + 100% - (100% / 18) * 14));
+    /*-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);*/
+    /* clip-path: polygon(0% 0%, 75% 0%, 100% 20%, 100% 80%, 75% 100%, 0% 100%); */
+    clip-path: polygon(0% 0%, 100% 20%, 100% 80%, 0% 100%); 
+}
+
+.monitor .holder {
+    flex: 1;
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.monitor .holder .up {
+    width: 60%;
+    margin: auto;
+    background-color: #8d614c;
+    flex: 1;
+}
+
+.monitor .holder .up .lighter {
+
+    width: 65%;
+    height: 100%;
+    background-color: #d5bc95;
+}
+
+.monitor .holder .down {
+    border-radius: 30px 30px 0 0;
+    flex: 1;
+    background-color: #8d614c;
+}
+
+.monitor .holder .down .lighter {
+    border-radius: 30px 30px 0 0;
+    width: 65%;
+    height: 100%;
+    background-color: #d5bc95;
+}
+
+.computer {
+    flex: 2;
+    /* background-color: #d5bb97; */
+    display: flex;
+}
+
+.computer .front {
+    background-color: #fbf5e0;
+    flex: 12;
+
+    display: flex;
+    padding: 2%;
+}
+
+.front .front-inside {
+    background-color: #efe0c0;
+    flex: 1;
+    display: flex;
+}
+
+.front-inside .left {
+    flex: 1;
+    position: relative;
+}
+.front-inside > div{
+    position: relative;
+}
+.front-inside > div:hover{
+    transform: scale(1.02);
+}
+.front-inside > div:active{
+    transform: scale(1);
+}
+.front-inside > div >.line {
+    position: absolute;
+    margin: 20%;
+    margin-left: 25%;
+    height: 10%;
+    width: 50%;
+    z-index: 2;
+    background-color: #9b8787;
+}
+.front-inside .left::before{
+    content: " ";
+    position: absolute;
+    width: 80%;
+    height: 55%;
+    margin: 10% ;
+    background-color: #d6bb97;
+}
+.front-inside > div >.square {
+    z-index: 1;
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 60%;
+    height: 30%;
+    aspect-ratio:1/1;
+    background-color: #6e5752;
+}
+.front-inside .right {
+    flex: 1;
+}
+
+.computer .edge {
+    background-color: #d5bb97;
+    flex: 1;
+}
+
+.computer .side {
+    background-color: #ad7d62;
+    flex: 5;
+    display: grid;
+    place-items: center;
+}
+
+.computer .side .grid {
+    width: 75%;
+    grid-gap: 3%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.side ul {
+    margin: 0;
+    padding: 0;
+}
+
+.side ul >* {
+    list-style-type: none;
+    margin: 0;
+    background-color: #90614c;
+    margin: 25% auto;
+
+    aspect-ratio: 1/1;
+    padding: 0;
+}
