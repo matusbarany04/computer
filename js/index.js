@@ -19,7 +19,7 @@ var play_sound = (dir) => {
 var power = document.getElementById("power");
 power.onclick = function () {
   play_sound("assets/switch.mp3");
-  setTimeout(() => {  window.location = "http://terminal.dismounted.space";},1000);
+  setTimeout(() => {  window.location = "http://terminal.dismounted.tech";},1000);
 };
   
 var red = document.getElementById("red");
