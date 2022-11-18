@@ -43,7 +43,7 @@ var iframe = document.getElementById("iframe");
 function openTerminal(){
   iframe.style.width = "100%";
   iframe.style.height = "100%";
-  iframe.src= "https://terminal.dismounted.space";
+  iframe.src= "https://terminal.dismounted.tech";
 }
 
 var shakeComputer = (count) => {
